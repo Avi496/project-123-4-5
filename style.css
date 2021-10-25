@@ -1,0 +1,15 @@
+.heading{
+    font-size: large;
+    width: 100%;
+    margin: 0px;
+    box-shadow: mediumspringgreen 5px 5px 38px;
+}
+.NOTE{
+    color: violet;
+    font-size: 15px;
+}
+canvas{
+    border: mediumvioletred 5px ridge;
+    border-radius: 20px;
+    box-shadow: plum 5px 5px 38px;
+}
