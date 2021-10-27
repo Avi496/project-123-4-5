@@ -8,12 +8,21 @@ function setup(){
 }
 function draw(){
     background("#c0c5ed");
+    textSize(Difference);
+    fill("#03fc0f");
+    text("Dog", 37, 250);
 }
+LeftWrist=0;
+Rightwrist=0;
+Difference=0;
 function ModelLoaded(){
     console.log("Model has been loaded.");
 }
 function gotPoses(results){
     if(results.length>0){
        console.log(results);
+       LeftWrist=results[0].pose.leftWrist.x;
+       Rightwrist=results[0].pose.rightWrist.x;
+       Difference=floor(LeftWrist-Rightwrist);
     }
 }
